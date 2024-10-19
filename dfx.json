@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "batchTransfer_backend": {
+      "main": "src/batchTransfer_backend/main.mo",
+      "type": "motoko"
+    },
+    "batchTransfer_frontend": {
+      "dependencies": [
+        "batchTransfer_backend"
+      ],
+      "source": [
+        "src/batchTransfer_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "batchTransfer_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
